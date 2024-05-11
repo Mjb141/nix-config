@@ -17,12 +17,11 @@
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Settings
+  nix.settings.experimental-features = [ "nix-command" "flakes"];
 
   # Set your time zone.
   time.timeZone = "Europe/London";
@@ -58,9 +57,6 @@
   # Configure console keymap
   console.keyMap = "uk";
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -77,9 +73,6 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.michael = {
@@ -100,9 +93,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+  vim
+  git
+  home-manager
   ];
+
+  environment.variables.EDITOR = "vim";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

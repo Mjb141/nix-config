@@ -1,5 +1,5 @@
 {
-  description = "Your new nix config";
+  description = "Nixos Config";
 
   inputs = {
     # Nixpkgs
@@ -19,7 +19,7 @@
     inherit (self) outputs;
   in {
     # NixOS configuration entrypoint
-    # Available through 'nixos-rebuild --flake .#your-hostname'
+    # Available through 'nixos-rebuild --flake .#nixos'
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
@@ -29,7 +29,7 @@
     };
 
     # Standalone home-manager configuration entrypoint
-    # Available through 'home-manager --flake .#your-username@your-hostname'
+    # Available through 'home-manager --flake .#michael@nixos'
     homeConfigurations = {
       "michael@nixos" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
