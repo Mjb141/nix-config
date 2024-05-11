@@ -10,4 +10,4 @@ To apply system changes:
 
 To apply home changes:
 
-`home-manager switch --flake .#michael@nixos
+`home-manager switch --flake .#michael@nixos`

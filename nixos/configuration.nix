@@ -2,11 +2,12 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # inputs.hyprland.nixosModules.default
       ./hardware-configuration.nix
     ];
 
@@ -21,7 +22,11 @@
   networking.networkmanager.enable = true;
 
   # Settings
-  nix.settings.experimental-features = [ "nix-command" "flakes"];
+  nix.settings = {
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+    experimental-features = [ "nix-command" "flakes"];
+  };
 
   # Set your time zone.
   time.timeZone = "Europe/London";
@@ -49,9 +54,9 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "gb";
-    xkbVariant = "";
+    variant = "";
   };
 
   # Configure console keymap
@@ -84,8 +89,12 @@
     ];
   };
 
-  # Install firefox.
+  # Install programs
   programs.firefox.enable = true;
+  # programs.hyprland = {
+  #   enable = true;
+  #   xwayland.enable = true;
+  # };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -93,12 +102,11 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  vim
   git
   home-manager
   ];
 
-  environment.variables.EDITOR = "vim";
+  environment.variables.EDITOR = "nvim";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

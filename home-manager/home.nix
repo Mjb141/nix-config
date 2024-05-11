@@ -7,6 +7,18 @@
   pkgs,
   ...
 }: {
+  # wayland.windowManager.hyprland.enable = true;
+
+  # wayland.windowManager.hyprland.settings = {
+  #   "$mainMod" = "SUPER_CTRL";
+  #   "secondaryMod" = "SUPER_CTRL_SHIFT";
+
+  #   bind = 
+  #     [
+  #       "$mainMod" "T" "exec" "warp-terminal"
+  #     ];
+  # };
+
   # You can import other home-manager modules here
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
@@ -44,8 +56,8 @@
   };
 
   # Add stuff for your user as you see fit:
-  # programs.neovim.enable = true;
-  # home.packages = with pkgs; [ steam ];
+  programs.neovim.enable = true;
+  home.packages = with pkgs; [ steam warp-terminal ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
