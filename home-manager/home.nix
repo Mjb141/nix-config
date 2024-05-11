@@ -94,8 +94,8 @@
 
     shellAliases = {
       vim = "nvim";
-      sysup = "sudo nixos-rebuild switch --flake /home/michael/Documents/nix-config/#nixos";
-      homeup = "home-manager switch --flake /home/michael/Documents/nix-config/#michael@nixos";
+      sysup = "sudo nixos-rebuild switch --flake /home/michael/Projects/nix-config/#nixos";
+      homeup = "home-manager switch --flake /home/michael/Projects/nix-config/#michael@nixos";
     };
   };
 

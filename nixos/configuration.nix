@@ -43,7 +43,7 @@
   # SDDM
   services.displayManager.sddm = {
     enable = true;
-    theme = "sugar-candy";
+    theme = "sddm-chili-theme";
   };
 
   # Configure keymap in X11
@@ -71,6 +71,7 @@
   environment.systemPackages = with pkgs; [
     home-manager
     git
+    sddm-chili-theme
   ];
 
   # Install programs
