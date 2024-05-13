@@ -69,6 +69,7 @@
   home.packages = with pkgs; [ 
     steam 
     warp-terminal
+    kitty
     obsidian
     hyprland-workspaces
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
