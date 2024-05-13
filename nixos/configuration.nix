@@ -98,6 +98,7 @@
     NIXOS_OZONE_WL = "1";
     LIBVA_DRIVER_NAME = "nvidia";
     WLR_NO_HARDWARE_CURSORS = "1";
+    WLR_RENDERER_ALLOW_SOFTWARE = "1";
   };
 
   # This value determines the NixOS release from which the default

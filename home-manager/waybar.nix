@@ -34,8 +34,7 @@
           format =  "{}";
         };
         "network" = {
-          format-wifi = "{signalStrength}%";
-          format-linked =  "{ifname} (No IP)";
+          format-wifi = "WiFi: {signalStrength}%";
           format-disconnected =  "Disconnected";
         };
         "pulseaudio" = {
@@ -118,6 +117,7 @@
       #window,
       #clock,
       #battery,
+      #pulseaudio,
       #network,
       #bluetooth,
       #workspaces,
@@ -129,11 +129,6 @@
         margin: 3px 0px;
         margin-top: 10px;
         border: 1px solid rgba(255, 77, 0, 0.4);
-      }
-      
-      /* close to left */
-      #pulseaudio {
-        border-radius: 10px 0px 0px 10px;
       }
       
       /*close to the right */
@@ -195,8 +190,7 @@
       
       #pulseaudio {
         color: rgba(0, 0, 0, 0.9);
-        border-left: 0px;
-        border-right: 0px;
+        border-radius: 10px 0px 0px 10px;
       }
       
       #pulseaudio.microphone {
