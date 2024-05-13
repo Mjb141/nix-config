@@ -114,7 +114,6 @@
     LIBVA_DRIVER_NAME = "nvidia";
     WLR_NO_HARDWARE_CURSORS = "1";
     WLR_RENDERER_ALLOW_SOFTWARE = "1";
-    WARP_ENABLE_WAYLAND = "1";
   };
 
   # This value determines the NixOS release from which the default
