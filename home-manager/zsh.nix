@@ -7,7 +7,6 @@
   pkgs,
   ...
 }: {
-    # Add programs
   programs.zsh = {
     enable = true;
     enableCompletion = true;
