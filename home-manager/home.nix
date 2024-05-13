@@ -7,41 +7,146 @@
   pkgs,
   ...
 }: {
-  wayland.windowManager.hyprland.enable = true;
+  wayland.windowManager.hyprland = {
+    enable = true;
+    extraConfig = ''
+      monitor=,preferred,auto,auto,bitdepth,10
 
-  wayland.windowManager.hyprland.settings = {
-    "$mainMod" = "SUPER_CTRL";
-    "$secondaryMod" = "SUPER_CTRL_SHIFT";
-
-    # Exec-once
-    # "exec-once" = "/home/michael/.config/hypr/xdg-portal-hyprland";
-
-    input = {
-      kb_layout = "gb";
-      follow_mouse = "1";
-      sensitivity = "0";
-    };
-
-    bind = 
-      [
-	# Shortcuts
-        "$mainMod, T, exec, warp-terminal"
-        "$mainMod, F, exec, firefox"
-	"$mainMod, F4, killactive, "
-        "$secondaryMod, T, exec, xterm"
-	# Movements
-	"bind = $mainMod, j, movefocus, l"
-	"bind = $mainMod, k, movefocus, r"
-	"bind = $mainMod, w, workspace, -1"
-	"bind = $mainMod, e, workspace, +1"
-	# Move apps
-	"bind = $secondaryMod, j, movewindow, l"
-	"bind = $secondaryMod, k, movewindow, r"
-	"bind = $secondaryMod, w, movetoworkspace, -1"
-	"bind = $secondaryMod, e, movetoworkspace, +1"
-      ];
+      # exec-once = ~/.config/hypr/xdg-portal-hyprland
+      exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+      exec-once = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+      
+      exec-once = waybar
+      exec-once = mako
+      exec-once = nm-applet --indicator
+      exec-once = wl-paste --watch cliphist store
+      
+      exec = hyprpaper
+      
+      input {
+          kb_layout = gb
+          kb_variant =
+          kb_model =
+          kb_options =
+          kb_rules =
+      
+          follow_mouse = 1
+          sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
+      }
+      
+      general {
+          gaps_in = 5
+          gaps_out = 10
+          border_size = 2
+          col.active_border = rgba(ff0000cc)
+          col.inactive_border = rgba(ff5800cc)
+          layout = dwindle
+      }
+      
+      misc {
+          disable_hyprland_logo = yes
+      }
+      
+      decoration {
+          # See https://wiki.hyprland.org/Configuring/Variables/ for more
+          rounding = 6
+      
+          # https://wiki.hyprland.org/Configuring/Variables/#blur
+          blur {
+              size = 7
+              passes = 4
+              new_optimizations = on
+          }
+      
+          drop_shadow = yes
+          shadow_range = 8
+          shadow_render_power = 3
+          col.shadow = rgba(1a1a1aee)
+      }
+      
+      animations {
+          enabled = yes
+      
+          # Some default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
+          bezier = myBezier, 0.10, 0.9, 0.1, 1.05
+      
+          animation = windows, 1, 7, myBezier, slide
+          animation = windowsOut, 1, 7, myBezier, slide
+          animation = border, 1, 10, default
+          animation = fade, 1, 7, default
+          animation = workspaces, 1, 6, default
+      }
+      
+      master {
+          # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
+          new_is_master = true
+      }
+      
+      # Windows that should float by default
+      windowrule = float,^(pavucontrol)$
+      windowrule = float,^(blueman-manager)$
+      windowrule = float,^(nm-connection-editor)$
+      
+      # Rules for Kitty, Thunar, Wofi
+      windowrulev2 = opacity 0.8 0.8,class:^(kitty)$
+      windowrulev2 = animation popin,class:^(kitty)$,title:^(update-sys)$
+      windowrulev2 = animation popin,class:^(thunar)$
+      windowrulev2 = opacity 0.8 0.8,class:^(thunar)$
+      windowrulev2 = move cursor -3% -105%,class:^(wofi)$
+      windowrulev2 = noanim,class:^(wofi)$
+      windowrulev2 = opacity 0.8 0.6,class:^(wofi)$
+      
+      # Rule for Last Epoch
+      windowrulev2 = fullscreen,class:^(Last Epoch)$
+      
+      # Rule for Warp
+      windowrulev2 = tile,class:^(dev.warp.Warp)$
+      
+      # See https://wiki.hyprland.org/Configuring/Keywords/ for more
+      $mainMod = SUPER_CTRL
+      $secondaryMod = SUPER_CTRL_SHIFT
+      
+      # Keybinds. see https://wiki.hyprland.org/Configuring/Binds/ for more
+      bind = $mainMod, T, exec, warp-terminal
+      bind = $mainMod, F, exec, firefox # open firefox
+      bind = $mainMod, F4, killactive, # close the active window
+      bind = $mainMod, M, exec, wlogout --protocol layer-shell # show the logout window
+      bind = $mainMod, SPACE, exec, wofi # Show the graphical app launcher
+      bind = $mainMod, S, exec, grim -g "$(slurp)" - | swappy -f - # take a screenshot
+      bind = $secondaryMod, T, exec, kitty  # open the terminal
+      
+      bind = ALT, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy # open clipboard manager
+      bind = ALT, L, exec, swaylock
+      
+      # Movements
+      # Switch apps within workspace
+      bind = $mainMod, j, movefocus, l
+      bind = $mainMod, k, movefocus, r
+      # Switch workspaces
+      bind = $mainMod, w, workspace, -1
+      bind = $mainMod, e, workspace, +1
+      
+      # Move apps within workspace
+      bind = $secondaryMod, j, movewindow, l 
+      bind = $secondaryMod, k, movewindow, r 
+      # Move workspaces
+      bind = $secondaryMod, w, movetoworkspace, -1
+      bind = $secondaryMod, e, movetoworkspace, +1
+      
+      # Move/resize windows with mainMod + LMB/RMB and dragging
+      bindm = $mainMod, mouse:272, movewindow
+      bindm = $mainMod, mouse:273, resizewindow
+      
+      # Volume
+      binde = , xf86audioraisevolume, exec, pamixer -i 10
+      binde = , xf86audiolowervolume, exec, pamixer -d 10
+      
+      # Source a file (multi-file configs)
+      # source = ~/.config/hypr/env_var.conf
+      # source = ~/.config/hypr/env_var_nvidia.conf
+    '';
   };
-
+    
   # You can import other home-manager modules here
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
@@ -75,37 +180,54 @@
   };
 
   # Add programs
-  programs.neovim.enable = true;
-
-  programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    autosuggestion.enable = true;
-    syntaxHighlighting.enable = true;
-
-    oh-my-zsh = {
+  programs = {
+    home-manager.enable = true;
+    git.enable = true;
+    zoxide.enable = true;
+    neovim.enable = true;
+    waybar.enable = true;
+    zsh = {
       enable = true;
-      plugins = [ 
-        "git"
-	"ssh-agent"
-      ];
-      extraConfig = "zstyle :omz:plugins:ssh-agent identities GithubNix";
-    };
+      enableCompletion = true;
+      autosuggestion.enable = true;
+      syntaxHighlighting.enable = true;
 
-    shellAliases = {
-      vim = "nvim";
-      sysup = "sudo nixos-rebuild switch --flake /home/michael/Projects/nix-config/#nixos";
-      homeup = "home-manager switch --flake /home/michael/Projects/nix-config/#michael@nixos";
+      oh-my-zsh = {
+        enable = true;
+        plugins = [ 
+          "git"
+          "ssh-agent"
+        ];
+        extraConfig = "zstyle :omz:plugins:ssh-agent identities GithubNix";
+      };
+
+      shellAliases = {
+        vim = "nvim";
+        sysup = "sudo nixos-rebuild switch --flake /home/michael/Projects/nix-config/#nixos";
+        homeup = "home-manager switch --flake /home/michael/Projects/nix-config/#michael@nixos";
+      };
+    };  
+  };
+
+  # Add services
+  services = {
+    hyprpaper = {
+      enable = true;
+      settings = {
+        wallpaper = [
+	  "DP-1,/home/michael/Pictures/45nlnynl1ydb1.jpg"
+	];
+      };
     };
+    mako.enable = true;
   };
 
   # Add packages
-  home.packages = with pkgs; [ steam warp-terminal ];
-
-  # Enable home-manager and git
-  programs.home-manager.enable = true;
-  programs.git.enable = true;
-  programs.zoxide.enable = true;
+  home.packages = with pkgs; [ 
+    steam 
+    warp-terminal
+    obsidian
+  ];
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
