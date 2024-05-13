@@ -11,6 +11,7 @@
     enable = true;
     extraConfig = ''
       monitor=,preferred,auto,auto,bitdepth,10
+      monitor=Unknown-1,disable
 
       # exec-once = ~/.config/hypr/xdg-portal-hyprland
       exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
