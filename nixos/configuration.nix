@@ -85,7 +85,6 @@
   environment.systemPackages = with pkgs; [
     home-manager
     pamixer
-    git
     elegant-sddm
   ];
 

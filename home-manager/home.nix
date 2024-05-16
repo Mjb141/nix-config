@@ -48,6 +48,7 @@
     git.enable = true;
     zoxide.enable = true;
     neovim.enable = true;
+    kitty.enable = true;
   };
 
   # Add services
@@ -70,7 +71,6 @@
   home.packages = with pkgs; [ 
     steam 
     warp-terminal
-    kitty
     obsidian
     discord
     hyprland-workspaces
