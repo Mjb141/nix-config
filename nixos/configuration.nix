@@ -70,7 +70,7 @@
     displayManager = {
       sddm = {
         enable = true;
-        theme = "sddm-chili-theme";
+        theme = "Elegant";
       };
     };
     pipewire = {
@@ -86,6 +86,7 @@
     home-manager
     pamixer
     git
+    elegant-sddm
   ];
 
   # Programs
