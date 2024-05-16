@@ -14,6 +14,8 @@
     # inputs.nix-colors.homeManagerModule
     ./hyprland.nix
     ./waybar.nix
+    ./mako.nix
+    ./wofi.nix
     ./zsh.nix
   ];
 
@@ -62,7 +64,6 @@
 	];
       };
     };
-    mako.enable = true;
   };
 
   # Add packages
@@ -71,6 +72,7 @@
     warp-terminal
     kitty
     obsidian
+    discord
     hyprland-workspaces
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
   ];
