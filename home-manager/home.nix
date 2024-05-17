@@ -17,7 +17,6 @@
     ./mako.nix
     ./wofi.nix
     ./zsh.nix
-    ./sddm-monochrome.nix
   ];
 
   nixpkgs = {
