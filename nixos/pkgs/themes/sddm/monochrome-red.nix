@@ -6,7 +6,7 @@
     dontBuild = true;
     installPhase = ''
       mkdir -p $out/share/sddm/themes
-      cp -aR $src $out/share/sddm/themes/mono-red
+      cp -aR $src/monochrome $out/share/sddm/themes/mono-red
     '';
     src = fetchFromGitHub {
       owner = "camholl";

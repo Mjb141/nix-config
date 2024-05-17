@@ -70,7 +70,7 @@
     displayManager = {
       sddm = {
         enable = true;
-        theme = "mono-red";
+        theme = "Elegant";
       };
     };
     pipewire = {
