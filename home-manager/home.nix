@@ -17,6 +17,7 @@
     ./mako.nix
     ./wofi.nix
     ./zsh.nix
+    ./sddm-monochrome.nix
   ];
 
   nixpkgs = {
@@ -49,6 +50,7 @@
     zoxide.enable = true;
     neovim.enable = true;
     kitty.enable = true;
+    ripgrep.enable = true;
   };
 
   # Add services
@@ -73,6 +75,7 @@
     warp-terminal
     obsidian
     discord
+    spotify
     hyprland-workspaces
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
   ];

@@ -70,7 +70,7 @@
     displayManager = {
       sddm = {
         enable = true;
-        theme = "Elegant";
+        theme = "mono-red";
       };
     };
     pipewire = {
@@ -86,6 +86,7 @@
     home-manager
     pamixer
     elegant-sddm
+    (callPackage ./pkgs/themes/sddm/monochrome-red.nix {}).monochrome-red
   ];
 
   # Programs
