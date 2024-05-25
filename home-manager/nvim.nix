@@ -11,6 +11,7 @@ in {
 
     extraPackages = with pkgs; [
       alejandra
+      gcc9
       lua-language-server
       nodePackages.bash-language-server
       nodePackages.prettier
