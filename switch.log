@@ -1,9 +1,39 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+these 8 derivations will be built:
+  /nix/store/az44p2aac630cnw35l52p31ddcx8qx6j-home-manager.drv
+  /nix/store/f3ns1qbc5rz5prd36nwnwfqzxa1dkmq7-home-configuration-reference-manpage.drv
+  /nix/store/2cakbxrm1ps70cfjri2k7hpg3f119530-home-manager-path.drv
+  /nix/store/sxrnxpdzdf3vq5f06im04cvwhq93zdf6-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/wy631sns4hm54qxcw29sgiszis04hybl-hm_hyprhyprland.conf.drv
+  /nix/store/08f5j4lygbczpnyjqm0qkl8wda1hj6yw-home-manager-files.drv
+  /nix/store/sac67ibi5r03qj2qzxp37bqbm1gb279y-activation-script.drv
+  /nix/store/dhv0561dp2dk2nxbhmyv3qi8cwbaxf4w-home-manager-generation.drv
+building '/nix/store/wy631sns4hm54qxcw29sgiszis04hybl-hm_hyprhyprland.conf.drv'...
+building '/nix/store/f3ns1qbc5rz5prd36nwnwfqzxa1dkmq7-home-configuration-reference-manpage.drv'...
+building '/nix/store/az44p2aac630cnw35l52p31ddcx8qx6j-home-manager.drv'...
+building '/nix/store/2cakbxrm1ps70cfjri2k7hpg3f119530-home-manager-path.drv'...
+building '/nix/store/sac67ibi5r03qj2qzxp37bqbm1gb279y-activation-script.drv'...
+building '/nix/store/sxrnxpdzdf3vq5f06im04cvwhq93zdf6-hm_fontconfigconf.d10hmfonts.conf.drv'...
+building '/nix/store/08f5j4lygbczpnyjqm0qkl8wda1hj6yw-home-manager-files.drv'...
+building '/nix/store/dhv0561dp2dk2nxbhmyv3qi8cwbaxf4w-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+replacing old 'home-manager-path'
+installing 'home-manager-path'
+building '/nix/store/d0bx6w1iyq8zqx8dbnqd9qwm4yy36d11-user-environment.drv'...
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+Creating profile generation 52
+Creating home file links in /home/michael
+Activating onFilesChange
+ok
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
-reloading the following units: dbus.service
-restarting the following units: polkit.service
+
+There are 162 unread and relevant news items.
+Read them by running the command "home-manager news".
+

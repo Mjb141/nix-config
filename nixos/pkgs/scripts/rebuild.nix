@@ -27,21 +27,26 @@
     git diff -U0 '*.nix'
 
     echo "NixOS Rebuilding..."
-
     # Rebuild, output simplified errors, log tracebacks
     sudo nixos-rebuild switch --flake ~/Projects/nix-config/#nixos &>switch.log || (cat switch.log | grep --color error && exit 1)
+    echo "NixOS Rebuilt."
+
+    echo "Home-Manager Rebuilding..."
+    home-manager switch --flake ~/Projects/nix-config/#michael@nixos &>switch.log || (cat switch.log | grep --color error && exit 1)
+    echo "Home-Manager Rebuilt."
 
     # Get current generation metadata
     current=$(nixos-rebuild list-generations | grep current)
 
-    # Commit all changes witih the generation metadata
+    # Commit and push all changes witih the generation metadata
     git commit -am "$current"
+    git push
 
     # Back to where you were
     popd
 
     # Notify all OK!
-    echo "NixOS Rebuilt OK!"
+    echo "Rebuild Complete!"
   '';
 in {
   environment.systemPackages = [rebuild];
