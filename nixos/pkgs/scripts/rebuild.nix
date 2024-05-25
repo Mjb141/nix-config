@@ -13,7 +13,7 @@
     pushd ~/Projects/nix-config/
 
     # Early return if no changes were detected (thanks @singiamtel!)
-    if git diff --quiet '*.nix'; then
+    if git diff --quiet '*.nix' '*.lua'; then
         echo "No changes detected, exiting."
         popd
         exit 0
