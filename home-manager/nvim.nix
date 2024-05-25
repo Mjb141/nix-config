@@ -15,6 +15,7 @@ in {
       nodePackages.bash-language-server
       nodePackages.prettier
       nodePackages.pyright
+      vimPlugins.nvim-treesitter.withAllGrammars
       ruff
       ruff-lsp
       shellcheck
