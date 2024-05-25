@@ -26,6 +26,9 @@
       vim = "nvim";
       sysup = "sudo nixos-rebuild switch --flake /home/michael/Projects/nix-config/#nixos";
       homeup = "home-manager switch --flake /home/michael/Projects/nix-config/#michael@nixos";
+      # Following alias is to find generations for rollback
+      # See: https://nix-community.github.io/home-manager/index.xhtml#sec-usage-rollbacks
+      homegens = "home-manager generations";
     };
   };
 }
