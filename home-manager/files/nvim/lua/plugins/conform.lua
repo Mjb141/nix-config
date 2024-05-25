@@ -7,6 +7,7 @@ return {
       javascript = { { "prettierd", "prettier" } },
       terraform = { { "terraform_fmt", "tflint" } },
       lua = { "stylua" },
+      nix = { "alejandra" },
     },
   },
 }

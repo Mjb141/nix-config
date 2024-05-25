@@ -1,20 +1,7 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-Starting Home Manager activation
-Activating checkFilesChanged
-Activating checkLinkTargets
-Activating writeBoundary
-Activating installPackages
-replacing old 'home-manager-path'
-installing 'home-manager-path'
-Activating linkGeneration
-Cleaning up orphan links from /home/michael
-No change so reusing latest profile generation 62
-Creating home file links in /home/michael
-Activating onFilesChange
-Activating reloadSystemd
-Starting units: hyprland-session.target
+building the system configuration...
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-
-There are 162 unread and relevant news items.
-Read them by running the command "home-manager news".
-
+activating the configuration...
+setting up /etc...
+reloading user units for michael...
+restarting sysinit-reactivation.target
