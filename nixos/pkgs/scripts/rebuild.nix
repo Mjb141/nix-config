@@ -25,6 +25,7 @@
 
     # Shows your changes
     git diff -U0 '*.nix'
+    git add .
 
     echo "NixOS Rebuilding..."
     # Rebuild, output simplified errors, log tracebacks
