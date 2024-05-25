@@ -1,7 +1,37 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+these 6 derivations will be built:
+  /nix/store/14c79k6cz5gip3i66v5sak14xyrvb3wi-neovim-0.10.0.drv
+  /nix/store/8sk4swibj5ck2i6dyv935yvnx7ggkprc-home-manager-path.drv
+  /nix/store/6l3a8ghnxnly5mlhbs978i37l256h1hc-activation-script.drv
+  /nix/store/i3rgk33dm2gdl37n7zkcyb1cnf9gaw7n-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/fmydls0gv9kqf9xiblg6cq1sblsvijr3-home-manager-files.drv
+  /nix/store/x8bbv8y3f9pzbi5yw2ckd8fns70blqrv-home-manager-generation.drv
+this path will be fetched (0.31 MiB download, 1.85 MiB unpacked):
+  /nix/store/dsb0rmp3jsvqf327dkc3djk9wqb30qza-vimplugin-nvim-treesitter-2024-05-16
+copying path '/nix/store/dsb0rmp3jsvqf327dkc3djk9wqb30qza-vimplugin-nvim-treesitter-2024-05-16' from 'https://cache.nixos.org'...
+building '/nix/store/14c79k6cz5gip3i66v5sak14xyrvb3wi-neovim-0.10.0.drv'...
+building '/nix/store/8sk4swibj5ck2i6dyv935yvnx7ggkprc-home-manager-path.drv'...
+building '/nix/store/6l3a8ghnxnly5mlhbs978i37l256h1hc-activation-script.drv'...
+building '/nix/store/i3rgk33dm2gdl37n7zkcyb1cnf9gaw7n-hm_fontconfigconf.d10hmfonts.conf.drv'...
+building '/nix/store/fmydls0gv9kqf9xiblg6cq1sblsvijr3-home-manager-files.drv'...
+building '/nix/store/x8bbv8y3f9pzbi5yw2ckd8fns70blqrv-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+replacing old 'home-manager-path'
+installing 'home-manager-path'
+building '/nix/store/4101pj0cnkhbplm8ikihmaxrrk5v9qml-user-environment.drv'...
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+Creating profile generation 56
+Creating home file links in /home/michael
+Activating onFilesChange
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
+
+There are 162 unread and relevant news items.
+Read them by running the command "home-manager news".
+
