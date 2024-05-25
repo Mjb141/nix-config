@@ -15,6 +15,7 @@
     ./hyprland.nix
     ./waybar.nix
     ./mako.nix
+    ./nvim.nix
     ./wofi.nix
     ./zsh.nix
   ];
@@ -47,7 +48,6 @@
     home-manager.enable = true;
     git.enable = true;
     zoxide.enable = true;
-    neovim.enable = true;
     kitty.enable = true;
     ripgrep.enable = true;
   };
