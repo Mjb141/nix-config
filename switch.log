@@ -1,7 +1,34 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+these 6 derivations will be built:
+  /nix/store/iasvysl0d7v4mpnjy6ibnh8z8wr76kc7-neovim-0.10.0.drv
+  /nix/store/gfrfblypq6hdprhliygf4i4k0c4avfnj-home-manager-path.drv
+  /nix/store/09bzymsf4im81xjm75wpjd8vg3rkqm19-activation-script.drv
+  /nix/store/rym36vpqqdhw09laz6jxl24cvgpazj7s-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/ya53sf7myvkwci3z1k1xf9s8y3xrdibl-home-manager-files.drv
+  /nix/store/9jdi8b2fjhj552fajrvbwbdmqrrii2qa-home-manager-generation.drv
+building '/nix/store/iasvysl0d7v4mpnjy6ibnh8z8wr76kc7-neovim-0.10.0.drv'...
+building '/nix/store/gfrfblypq6hdprhliygf4i4k0c4avfnj-home-manager-path.drv'...
+building '/nix/store/09bzymsf4im81xjm75wpjd8vg3rkqm19-activation-script.drv'...
+building '/nix/store/rym36vpqqdhw09laz6jxl24cvgpazj7s-hm_fontconfigconf.d10hmfonts.conf.drv'...
+building '/nix/store/ya53sf7myvkwci3z1k1xf9s8y3xrdibl-home-manager-files.drv'...
+building '/nix/store/9jdi8b2fjhj552fajrvbwbdmqrrii2qa-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+replacing old 'home-manager-path'
+installing 'home-manager-path'
+building '/nix/store/4q3d4bms1rin8li85n321p11m48g50rz-user-environment.drv'...
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+Creating profile generation 61
+Creating home file links in /home/michael
+Activating onFilesChange
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
+
+There are 162 unread and relevant news items.
+Read them by running the command "home-manager news".
+
