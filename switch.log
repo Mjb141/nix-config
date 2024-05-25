@@ -1,20 +1,32 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-Starting Home Manager activation
-Activating checkFilesChanged
-Activating checkLinkTargets
-Activating writeBoundary
-Activating installPackages
-replacing old 'home-manager-path'
-installing 'home-manager-path'
-Activating linkGeneration
-Cleaning up orphan links from /home/michael
-No change so reusing latest profile generation 52
-Creating home file links in /home/michael
-Activating onFilesChange
-Activating reloadSystemd
-Starting units: hyprland-session.target
+building the system configuration...
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-
-There are 162 unread and relevant news items.
-Read them by running the command "home-manager news".
-
+these 11 derivations will be built:
+  /nix/store/9h960mwm5v7wy4ja8k14qgwn5k75vdnm-system-path.drv
+  /nix/store/185caynza9qra5sxk8bqbf6pybrlff3y-dbus-1.drv
+  /nix/store/725kjcqzylvz7xgyygwqqa8pdjwhjil4-X-Restart-Triggers-dbus.drv
+  /nix/store/gc1mrxxw6pc7hjb9l6lcsnbfgx132bzn-unit-dbus.service.drv
+  /nix/store/3zc5x854pr86q5s018jpz9lffbh2wcp5-X-Restart-Triggers-polkit.drv
+  /nix/store/qqnpkji9d0cmapq8xrvyhkbvv6jjf348-unit-polkit.service.drv
+  /nix/store/1hgf0wm55pmk65zdy6c9xqngg3cv38mg-system-units.drv
+  /nix/store/bx332psibnj0hndz15vsmysrkjzg46wa-unit-dbus.service.drv
+  /nix/store/zpncnv855ra270ynjaq2gh8fyxnch9br-user-units.drv
+  /nix/store/j4lr6yrcpx9zmq171c0d5lvjphbn4sr3-etc.drv
+  /nix/store/frmk6igpjliqzdysxljf9xfrh9dpdzlh-nixos-system-nixos-24.11.20240524.bfb7a88.drv
+building '/nix/store/9h960mwm5v7wy4ja8k14qgwn5k75vdnm-system-path.drv'...
+building '/nix/store/3zc5x854pr86q5s018jpz9lffbh2wcp5-X-Restart-Triggers-polkit.drv'...
+building '/nix/store/185caynza9qra5sxk8bqbf6pybrlff3y-dbus-1.drv'...
+building '/nix/store/qqnpkji9d0cmapq8xrvyhkbvv6jjf348-unit-polkit.service.drv'...
+building '/nix/store/725kjcqzylvz7xgyygwqqa8pdjwhjil4-X-Restart-Triggers-dbus.drv'...
+building '/nix/store/bx332psibnj0hndz15vsmysrkjzg46wa-unit-dbus.service.drv'...
+building '/nix/store/gc1mrxxw6pc7hjb9l6lcsnbfgx132bzn-unit-dbus.service.drv'...
+building '/nix/store/zpncnv855ra270ynjaq2gh8fyxnch9br-user-units.drv'...
+building '/nix/store/1hgf0wm55pmk65zdy6c9xqngg3cv38mg-system-units.drv'...
+building '/nix/store/j4lr6yrcpx9zmq171c0d5lvjphbn4sr3-etc.drv'...
+building '/nix/store/frmk6igpjliqzdysxljf9xfrh9dpdzlh-nixos-system-nixos-24.11.20240524.bfb7a88.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for michael...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service
+restarting the following units: polkit.service

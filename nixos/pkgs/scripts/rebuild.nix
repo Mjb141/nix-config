@@ -31,16 +31,25 @@
     sudo nixos-rebuild switch --flake ~/Projects/nix-config/#nixos &>switch.log || (cat switch.log | grep --color error && exit 1)
     echo "NixOS Rebuilt."
 
+    # Get current nix generation metadata
+    current_nix=$(nixos-rebuild list-generations | grep current)
+
+    # Commit and push all changes with the generation metadata
+    git commit -am "Nix $current_nix"
+    git push --set-upstream origin main
+    echo "NixOS Pushed."
+
     echo "Home-Manager Rebuilding..."
     home-manager switch --flake ~/Projects/nix-config/#michael@nixos &>switch.log || (cat switch.log | grep --color error && exit 1)
     echo "Home-Manager Rebuilt."
 
-    # Get current generation metadata
-    current=$(nixos-rebuild list-generations | grep current)
+    # Get current home generation metadata
+    current_home=$(home-manager generations | head -n 1 | awk -F '>' '{print $1}')
 
-    # Commit and push all changes witih the generation metadata
-    git commit -am "$current"
+    # Commit and push all changes with the generation metadata
+    git commit -am "Home $current_home"
     git push --set-upstream origin main
+    echo "Home-Manager Pushed."
 
     # Back to where you were
     popd
