@@ -1,8 +1,12 @@
-{ inputs, config, pkgs, ... }: {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+{
+  inputs,
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader
   boot.loader.systemd-boot.enable = true;
@@ -20,7 +24,7 @@
   nix.settings = {
     substituters = ["https://hyprland.cachix.org"];
     trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
-    experimental-features = [ "nix-command" "flakes"];
+    experimental-features = ["nix-command" "flakes"];
   };
 
   sound.enable = true;
@@ -61,10 +65,10 @@
   services = {
     xserver = {
       enable = true;
-      videoDrivers = [ "nvidia" ];
+      videoDrivers = ["nvidia"];
       xkb = {
         layout = "gb";
-	variant = "";
+        variant = "";
       };
     };
     displayManager = {
@@ -93,6 +97,7 @@
     pamixer
     elegant-sddm
     (callPackage ./pkgs/themes/sddm/monochrome-red.nix {}).monochrome-red
+    (callPackage ./pkgs/binaries/dagger.nix {}).dagger
   ];
 
   # Programs
@@ -106,10 +111,10 @@
   users.users.michael = {
     isNormalUser = true;
     description = "Michael";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [];
   };
-  
+
   # Variables
   environment.variables = {
     EDITOR = "nvim";

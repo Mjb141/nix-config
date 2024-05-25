@@ -5,9 +5,18 @@
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    # Flake utils
+    flake-utils.url = "github:numtide/flake-utils";
+
     # Home manager
     home-manager = {
       url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # Alejandra
+    alejandra = {
+      url = "github:kamadorueda/alejandra/3.0.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -15,7 +24,9 @@
   outputs = {
     self,
     nixpkgs,
+    flake-utils,
     home-manager,
+    alejandra,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -23,10 +34,17 @@
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#nixos'
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      nixos = nixpkgs.lib.nixosSystem rec {
         specialArgs = {inherit inputs outputs;};
-        # > Our main nixos configuration file <
-        modules = [./nixos/configuration.nix];
+	system = "x86_64-linux";
+        modules = [
+	  ./nixos/configuration.nix
+	  {
+	    environment.systemPackages = [
+	      alejandra.defaultPackage.${system} 
+	    ];
+	  }
+	];
       };
     };
 
