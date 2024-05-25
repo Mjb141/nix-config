@@ -80,7 +80,13 @@
       pulse.enable = true;
     };
   };
-  
+
+  # Docker
+  virtualisation.docker = {
+    enable = true;
+    autoPrune.enable = true;
+  };
+
   # Packages
   environment.systemPackages = with pkgs; [
     home-manager
