@@ -97,7 +97,6 @@
     home-manager
     pamixer
     elegant-sddm
-    neofetch
     (callPackage ./pkgs/themes/sddm/monochrome-red.nix {}).monochrome-red
     (callPackage ./pkgs/binaries/dagger.nix {}).dagger
   ];
