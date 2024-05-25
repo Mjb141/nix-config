@@ -15,10 +15,8 @@ in {
       lua-language-server
       nodePackages.bash-language-server
       nodePackages.prettier
-      nodePackages.pyright
       vimPlugins.nvim-treesitter.withAllGrammars
       ruff
-      ruff-lsp
       shellcheck
       shfmt
       stylua
