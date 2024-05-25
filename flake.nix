@@ -36,15 +36,15 @@
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem rec {
         specialArgs = {inherit inputs outputs;};
-	system = "x86_64-linux";
+        system = "x86_64-linux";
         modules = [
-	  ./nixos/configuration.nix
-	  {
-	    environment.systemPackages = [
-	      alejandra.defaultPackage.${system} 
-	    ];
-	  }
-	];
+          ./nixos/configuration.nix
+          {
+            environment.systemPackages = [
+              alejandra.defaultPackage.${system}
+            ];
+          }
+        ];
       };
     };
 

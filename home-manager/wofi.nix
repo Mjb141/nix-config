@@ -10,22 +10,22 @@
   programs.wofi = {
     enable = true;
     settings = {
-      width=600;
-      height=300;
-      location="center";
-      show="drun";
-      prompt="Search...";
-      filter_rate=100;
-      allow_markup=true;
-      no_actions=true;
-      halign="fill";
-      orientation="vertical";
-      content_halign="fill";
-      insensitive=true;
-      allow_images=true;
-      image_size=40;
-      gtk_dark=true;
-      dynamic_lines=true;
+      width = 600;
+      height = 300;
+      location = "center";
+      show = "drun";
+      prompt = "Search...";
+      filter_rate = 100;
+      allow_markup = true;
+      no_actions = true;
+      halign = "fill";
+      orientation = "vertical";
+      content_halign = "fill";
+      insensitive = true;
+      allow_images = true;
+      image_size = 40;
+      gtk_dark = true;
+      dynamic_lines = true;
     };
     style = ''
       window {
@@ -34,7 +34,7 @@
         background-color: #cdd6f4;
         border-radius: 15px;
       }
-      
+
       #input {
         padding: 4px;
         margin: 4px;
@@ -53,7 +53,7 @@
         border: 0px solid #1e1e2e;
         margin-bottom: 0px;
       }
-      
+
       #inner-box {
         margin: 4px;
         border: 10px solid #1e1e2e;
@@ -62,14 +62,14 @@
         background-color: #1e1e2e;
         border-radius: 15px;
       }
-      
+
       #outer-box {
         margin: 0px;
         border: none;
         border-radius: 15px;
         background-color: #1e1e2e;
       }
-      
+
       #scroll {
         margin-top: 5px;
         border: none;
@@ -77,12 +77,12 @@
         margin-bottom: 5px;
         /* background: rgb(255,255,255); */
       }
-      
+
       #img:selected {
         background-color: #89b4fa;
         border-radius: 15px;
       }
-      
+
       #text:selected {
         color: #cdd6f4;
         margin: 0px 0px;
@@ -90,14 +90,14 @@
         border-radius: 15px;
         background-color: #89b4fa;
       }
-      
+
       #entry {
         margin: 0px 0px;
         border: none;
         border-radius: 15px;
         background-color: transparent;
       }
-      
+
       #entry:selected {
         margin: 0px 0px;
         border: none;

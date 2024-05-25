@@ -1,5 +1,7 @@
-{ stdenv, fetchFromGitHub }:
 {
+  stdenv,
+  fetchFromGitHub,
+}: {
   monochrome-red = stdenv.mkDerivation rec {
     pname = "monochrome-red";
     version = "1.0";

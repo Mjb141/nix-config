@@ -8,7 +8,7 @@
   ...
 }: {
   fonts.fontconfig.enable = true;
-    
+
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule
@@ -58,25 +58,25 @@
       enable = true;
       settings = {
         ipc = "on";
-	preload = [
-	  "/home/michael/Pictures/gfy47ugj6beb1.webp"
-	];
+        preload = [
+          "/home/michael/Pictures/gfy47ugj6beb1.webp"
+        ];
         wallpaper = [
-	  "DP-2,/home/michael/Pictures/gfy47ugj6beb1.webp"
-	];
+          "DP-2,/home/michael/Pictures/gfy47ugj6beb1.webp"
+        ];
       };
     };
   };
 
   # Add packages
-  home.packages = with pkgs; [ 
-    steam 
+  home.packages = with pkgs; [
+    steam
     warp-terminal
     obsidian
     discord
     spotify
     hyprland-workspaces
-    (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+    (pkgs.nerdfonts.override {fonts = ["FiraCode" "DroidSansMono"];})
   ];
 
   # Nicely reload system units when changing configs

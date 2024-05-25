@@ -6,6 +6,7 @@
 }: {
   imports = [
     ./hardware-configuration.nix
+    ./pkgs/scripts/rebuild.nix
   ];
 
   # Bootloader
