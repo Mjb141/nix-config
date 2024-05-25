@@ -1,7 +1,27 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+these 3 derivations will be built:
+  /nix/store/f57fh62pp7winnjvl4ylv4d46670v1d9-hm_.zshrc.drv
+  /nix/store/k0mik6wswam4h9rv5bjvb4nk95ybm2aa-home-manager-files.drv
+  /nix/store/i8prcbqmygsdc6hhkab41rryzrvdhl4n-home-manager-generation.drv
+building '/nix/store/f57fh62pp7winnjvl4ylv4d46670v1d9-hm_.zshrc.drv'...
+building '/nix/store/k0mik6wswam4h9rv5bjvb4nk95ybm2aa-home-manager-files.drv'...
+building '/nix/store/i8prcbqmygsdc6hhkab41rryzrvdhl4n-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+replacing old 'home-manager-path'
+installing 'home-manager-path'
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+Creating profile generation 53
+Creating home file links in /home/michael
+Activating onFilesChange
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
+
+There are 162 unread and relevant news items.
+Read them by running the command "home-manager news".
+
