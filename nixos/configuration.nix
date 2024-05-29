@@ -97,7 +97,8 @@
     home-manager
     pamixer
     elegant-sddm
-    neofetch
+    slurp
+    wf-recorder
     (callPackage ./pkgs/themes/sddm/monochrome-red.nix {}).monochrome-red
     (callPackage ./pkgs/binaries/dagger.nix {}).dagger
   ];
