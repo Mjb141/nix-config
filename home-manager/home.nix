@@ -70,7 +70,6 @@
 
   # Add packages
   home.packages = with pkgs; [
-    steam
     warp-terminal
     obsidian
     discord
