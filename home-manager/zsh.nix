@@ -29,6 +29,8 @@
       # Following alias is to find generations for rollback
       # See: https://nix-community.github.io/home-manager/index.xhtml#sec-usage-rollbacks
       homegens = "home-manager generations";
+      # Store clean-up
+      storegc = "nix-store --gc";
     };
   };
 }
