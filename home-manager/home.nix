@@ -50,7 +50,7 @@
     zoxide.enable = true;
     kitty.enable = true;
     ripgrep.enable = true;
-    himalaya.enable = true;
+    thunderbird.enable = true;
   };
 
   # Add services
