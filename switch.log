@@ -1,9 +1,40 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+these 3 derivations will be built:
+  /nix/store/47k1hh5ihmfc2n6p2zb0zwqz00ika5ch-home-manager-files.drv
+  /nix/store/sbbzawh0fgyybryxlhd9k3zx81vxy94x-activation-script.drv
+  /nix/store/fcp97cb3x59kgrsgbq7bp5kg8mxh19mv-home-manager-generation.drv
+these 6 paths will be fetched (0.75 MiB download, 10.20 MiB unpacked):
+  /nix/store/xx7x1dwybpssfhq8yikvzz38bh3yrq97-file-5.45
+  /nix/store/4i0j14zymvlngyyhq2254f4g9m9my98y-gnu-config-2024-01-01
+  /nix/store/cdzpn0rdq810aknww3w9fy3wmw9ixr66-gnumake-4.4.1
+  /nix/store/nbad47q0m0m9c5xid7zh05hiknwircbp-patchelf-0.15.0
+  /nix/store/rg6agzlb4gcl4w2126m16qm4mgr8jgi6-stdenv-linux
+  /nix/store/bq6xbl9cq6hkcn65mz2fzc2k38xiv87h-update-autotools-gnu-config-scripts-hook
+copying path '/nix/store/4i0j14zymvlngyyhq2254f4g9m9my98y-gnu-config-2024-01-01' from 'https://cache.nixos.org'...
+copying path '/nix/store/xx7x1dwybpssfhq8yikvzz38bh3yrq97-file-5.45' from 'https://cache.nixos.org'...
+copying path '/nix/store/cdzpn0rdq810aknww3w9fy3wmw9ixr66-gnumake-4.4.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/nbad47q0m0m9c5xid7zh05hiknwircbp-patchelf-0.15.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/bq6xbl9cq6hkcn65mz2fzc2k38xiv87h-update-autotools-gnu-config-scripts-hook' from 'https://cache.nixos.org'...
+copying path '/nix/store/rg6agzlb4gcl4w2126m16qm4mgr8jgi6-stdenv-linux' from 'https://cache.nixos.org'...
+building '/nix/store/sbbzawh0fgyybryxlhd9k3zx81vxy94x-activation-script.drv'...
+building '/nix/store/47k1hh5ihmfc2n6p2zb0zwqz00ika5ch-home-manager-files.drv'...
+building '/nix/store/fcp97cb3x59kgrsgbq7bp5kg8mxh19mv-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+replacing old 'home-manager-path'
+installing 'home-manager-path'
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+Creating profile generation 70
+Creating home file links in /home/michael
+Activating onFilesChange
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-copying path '/nix/store/3357ihxq6fb46pbjacbln38mcl4krx5v-source' from 'https://cache.nixos.org'...
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
-the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+
+There are 162 unread and relevant news items.
+Read them by running the command "home-manager news".
+
