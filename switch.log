@@ -1,32 +1,21 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+nix profile remove /nix/store/j5i7cam1aah4dlx7051ljfyqibz3086b-home-manager-path
+removing 'home-manager-path'
+removed 1 packages, kept 0 packages
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+No change so reusing latest profile generation 72
+Creating home file links in /home/michael
+Activating onFilesChange
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-these 11 derivations will be built:
-  /nix/store/lqpq195wkmna6cxihvcnwz06xgyh6lfq-system-path.drv
-  /nix/store/25fjljajhn224kcxv1c1djcx1665m06h-dbus-1.drv
-  /nix/store/csi34llhzq250avlvjkw4dfjpd0c0x0i-X-Restart-Triggers-dbus.drv
-  /nix/store/1v3criij8gyw6gbmq04cxb6bvim11npa-unit-dbus.service.drv
-  /nix/store/54sc11b66z2lalg10j2djx3h25y22a5a-user-units.drv
-  /nix/store/dcs1bp8v603caairhnhagsrsw3cng0h3-X-Restart-Triggers-polkit.drv
-  /nix/store/iic3p9fx3hz45gxqzkjb7jjrad7p4cy8-unit-polkit.service.drv
-  /nix/store/qa0zpb5rw1b40vwiv0jj4l0a98xl6svd-unit-dbus.service.drv
-  /nix/store/f1xxl2yv7v71ccc5nmwmgcza3rw0xc4n-system-units.drv
-  /nix/store/d18qhhy16m76ql6qbmdc5wc9j53cgca4-etc.drv
-  /nix/store/93bwmxh04si4drkp1hklbdr12karjl2m-nixos-system-nixos-24.11.20240607.051f920.drv
-building '/nix/store/lqpq195wkmna6cxihvcnwz06xgyh6lfq-system-path.drv'...
-building '/nix/store/dcs1bp8v603caairhnhagsrsw3cng0h3-X-Restart-Triggers-polkit.drv'...
-building '/nix/store/25fjljajhn224kcxv1c1djcx1665m06h-dbus-1.drv'...
-building '/nix/store/iic3p9fx3hz45gxqzkjb7jjrad7p4cy8-unit-polkit.service.drv'...
-building '/nix/store/csi34llhzq250avlvjkw4dfjpd0c0x0i-X-Restart-Triggers-dbus.drv'...
-building '/nix/store/1v3criij8gyw6gbmq04cxb6bvim11npa-unit-dbus.service.drv'...
-building '/nix/store/qa0zpb5rw1b40vwiv0jj4l0a98xl6svd-unit-dbus.service.drv'...
-building '/nix/store/54sc11b66z2lalg10j2djx3h25y22a5a-user-units.drv'...
-building '/nix/store/f1xxl2yv7v71ccc5nmwmgcza3rw0xc4n-system-units.drv'...
-building '/nix/store/d18qhhy16m76ql6qbmdc5wc9j53cgca4-etc.drv'...
-building '/nix/store/93bwmxh04si4drkp1hklbdr12karjl2m-nixos-system-nixos-24.11.20240607.051f920.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
-reloading the following units: dbus.service
-restarting the following units: polkit.service
+
+There are 162 unread and relevant news items.
+Read them by running the command "home-manager news".
+
