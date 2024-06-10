@@ -19,6 +19,11 @@
       url = "github:kamadorueda/alejandra/3.0.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nil = {
+      url = "github:oxalica/nil";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -27,6 +32,7 @@
     flake-utils,
     home-manager,
     alejandra,
+    nil,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -42,6 +48,7 @@
           {
             environment.systemPackages = [
               alejandra.defaultPackage.${system}
+              nil.packages.${system}.default
             ];
           }
         ];
