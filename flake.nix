@@ -24,6 +24,11 @@
       url = "github:oxalica/nil";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    dagger = {
+      url = "github:dagger/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -33,6 +38,7 @@
     home-manager,
     alejandra,
     nil,
+    dagger,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -49,6 +55,7 @@
             environment.systemPackages = [
               alejandra.defaultPackage.${system}
               nil.packages.${system}.default
+              dagger.packages.${system}.dagger
             ];
           }
         ];

@@ -108,7 +108,7 @@
     wf-recorder
     grimblast
     (callPackage ./pkgs/themes/sddm/monochrome-red.nix {}).monochrome-red
-    (callPackage ./pkgs/binaries/dagger.nix {}).dagger
+    # (callPackage ./pkgs/binaries/dagger.nix {}).dagger
   ];
 
   # Programs
