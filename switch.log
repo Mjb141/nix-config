@@ -1,10 +1,30 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+these 4 derivations will be built:
+  /nix/store/wlpbdqzsilzqj33lxdra9rlbgj2fs4pa-waybar-style.css.drv
+  /nix/store/l1h2ak66ll9q9rc6czpd9n292dmcafk5-activation-script.drv
+  /nix/store/vm5iw63djwbciig3hfdwc99z27w7r9l9-home-manager-files.drv
+  /nix/store/g74r1c23d0lfsvdw6n91bl104n0lwmgp-home-manager-generation.drv
+building '/nix/store/wlpbdqzsilzqj33lxdra9rlbgj2fs4pa-waybar-style.css.drv'...
+building '/nix/store/l1h2ak66ll9q9rc6czpd9n292dmcafk5-activation-script.drv'...
+building '/nix/store/vm5iw63djwbciig3hfdwc99z27w7r9l9-home-manager-files.drv'...
+building '/nix/store/g74r1c23d0lfsvdw6n91bl104n0lwmgp-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+nix profile remove /nix/store/2w1ygka5lyazgjbnirwx0wjdjvn0myvs-home-manager-path
+removing 'home-manager-path'
+removed 1 packages, kept 0 packages
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+Creating profile generation 76
+Creating home file links in /home/michael
+Activating onFilesChange
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/gij7kab2yqp41xaam42k539xz6bq8kdz-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
-trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/gij7kab2yqp41xaam42k539xz6bq8kdz-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
-the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+
+There are 164 unread and relevant news items.
+Read them by running the command "home-manager news".
+
