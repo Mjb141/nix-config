@@ -84,12 +84,12 @@
 
       #workspaces button {
         padding: 5px;
-        color: rgba(255, 0, 0, 0.9);
+        color: rgba(0, 0, 0, 1);
         margin-right: 5px;
       }
 
       #workspaces button.active {
-        color: rgba(0, 0, 0, 1);
+        color: rgba(255, 0, 0, 0.9);
       }
 
       #workspaces button.focused {
