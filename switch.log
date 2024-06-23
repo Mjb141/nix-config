@@ -1,9 +1,37 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+these 6 derivations will be built:
+  /nix/store/bc3y3bvvdd38clw9wm7mbjiahz7w387y-neovim-0.10.0.drv
+  /nix/store/v0bddv7v9jfb7n4l4cvmmxxfbczj3xci-home-manager-path.drv
+  /nix/store/7j83ia081dqs6dhsmrxr3lrw6wp9bygv-activation-script.drv
+  /nix/store/c4kbcpvlfbd5z1dyyv655m1kvkj22p2f-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/dwibf93vp70g6cf533m481gan6h82b37-home-manager-files.drv
+  /nix/store/zslm8f9p5pxk9x9mb86rrj8rv15sk1bc-home-manager-generation.drv
+this path will be fetched (1.11 MiB download, 7.55 MiB unpacked):
+  /nix/store/8qw1qcdj9kwcdv1gwx2s1l3sknm9ar3i-node2nix-1.11.0
+copying path '/nix/store/8qw1qcdj9kwcdv1gwx2s1l3sknm9ar3i-node2nix-1.11.0' from 'https://cache.nixos.org'...
+building '/nix/store/bc3y3bvvdd38clw9wm7mbjiahz7w387y-neovim-0.10.0.drv'...
+building '/nix/store/v0bddv7v9jfb7n4l4cvmmxxfbczj3xci-home-manager-path.drv'...
+building '/nix/store/7j83ia081dqs6dhsmrxr3lrw6wp9bygv-activation-script.drv'...
+building '/nix/store/c4kbcpvlfbd5z1dyyv655m1kvkj22p2f-hm_fontconfigconf.d10hmfonts.conf.drv'...
+building '/nix/store/dwibf93vp70g6cf533m481gan6h82b37-home-manager-files.drv'...
+building '/nix/store/zslm8f9p5pxk9x9mb86rrj8rv15sk1bc-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+nix profile remove /nix/store/2w1ygka5lyazgjbnirwx0wjdjvn0myvs-home-manager-path
+removing 'home-manager-path'
+removed 1 packages, kept 0 packages
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+Creating profile generation 77
+Creating home file links in /home/michael
+Activating onFilesChange
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/s53hx0zn3v509p5dbs5vvbryvnsi8qfp-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
-trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/s53hx0zn3v509p5dbs5vvbryvnsi8qfp-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
+
+There are 164 unread and relevant news items.
+Read them by running the command "home-manager news".
+
