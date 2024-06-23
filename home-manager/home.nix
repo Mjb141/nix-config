@@ -75,6 +75,9 @@
     discord
     spotify
     hyprland-workspaces
+    nodejs_22
+    typescript
+
     (pkgs.nerdfonts.override {fonts = ["FiraCode" "DroidSansMono"];})
   ];
 
