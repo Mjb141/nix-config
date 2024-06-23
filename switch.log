@@ -1,37 +1,9 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-these 6 derivations will be built:
-  /nix/store/cixyws0d4f7z6qq801wkl2zmjlvb4z6g-neovim-0.10.0.drv
-  /nix/store/mmhy6mwrambbc9yzifb0gka4lliigifk-home-manager-path.drv
-  /nix/store/b28n2s352wfz9a8q3a8kwp2jxc6hmcwd-hm_fontconfigconf.d10hmfonts.conf.drv
-  /nix/store/fgi6rljp58xjai7w4hn6rvzbc1bircdc-home-manager-files.drv
-  /nix/store/phzg9yajm86r5apzrrhqnxzxv5mg3rp9-activation-script.drv
-  /nix/store/48hsjn81dfkys9kskla4cc8gzl8nk2ym-home-manager-generation.drv
-this path will be fetched (0.06 MiB download, 0.32 MiB unpacked):
-  /nix/store/ynai6km22qdx7iaci0qx4hs59lz4jzs9-vimplugin-typescript-tools.nvim-2024-06-18
-copying path '/nix/store/ynai6km22qdx7iaci0qx4hs59lz4jzs9-vimplugin-typescript-tools.nvim-2024-06-18' from 'https://cache.nixos.org'...
-building '/nix/store/cixyws0d4f7z6qq801wkl2zmjlvb4z6g-neovim-0.10.0.drv'...
-building '/nix/store/mmhy6mwrambbc9yzifb0gka4lliigifk-home-manager-path.drv'...
-building '/nix/store/phzg9yajm86r5apzrrhqnxzxv5mg3rp9-activation-script.drv'...
-building '/nix/store/b28n2s352wfz9a8q3a8kwp2jxc6hmcwd-hm_fontconfigconf.d10hmfonts.conf.drv'...
-building '/nix/store/fgi6rljp58xjai7w4hn6rvzbc1bircdc-home-manager-files.drv'...
-building '/nix/store/48hsjn81dfkys9kskla4cc8gzl8nk2ym-home-manager-generation.drv'...
-Starting Home Manager activation
-Activating checkFilesChanged
-Activating checkLinkTargets
-Activating writeBoundary
-Activating installPackages
-nix profile remove /nix/store/zaa5973d1m87qhkmmbkpl7fvwqwallam-home-manager-path
-removing 'home-manager-path'
-removed 1 packages, kept 0 packages
-Activating linkGeneration
-Cleaning up orphan links from /home/michael
-Creating profile generation 81
-Creating home file links in /home/michael
-Activating onFilesChange
-Activating reloadSystemd
-Starting units: hyprland-session.target
+building the system configuration...
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-
-There are 164 unread and relevant news items.
-Read them by running the command "home-manager news".
-
+trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/ykx0slhw5f8393j234m6i8cpaxsrgvki-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
+trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/ykx0slhw5f8393j234m6i8cpaxsrgvki-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
+activating the configuration...
+setting up /etc...
+reloading user units for michael...
+restarting sysinit-reactivation.target
