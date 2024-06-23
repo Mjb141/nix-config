@@ -41,7 +41,6 @@
 
   hardware.opengl = {
     enable = true;
-    driSupport = true;
     driSupport32Bit = true;
   };
 
@@ -107,6 +106,7 @@
     slurp
     wf-recorder
     grimblast
+    go
     (callPackage ./pkgs/themes/sddm/monochrome-red.nix {}).monochrome-red
     # (callPackage ./pkgs/binaries/dagger.nix {}).dagger
   ];
