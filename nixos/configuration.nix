@@ -107,6 +107,7 @@
     wf-recorder
     grimblast
     go
+    nodejs_22
     (callPackage ./pkgs/themes/sddm/monochrome-red.nix {}).monochrome-red
     # (callPackage ./pkgs/binaries/dagger.nix {}).dagger
   ];

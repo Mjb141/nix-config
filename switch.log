@@ -1,30 +1,38 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-these 4 derivations will be built:
-  /nix/store/wlpbdqzsilzqj33lxdra9rlbgj2fs4pa-waybar-style.css.drv
-  /nix/store/l1h2ak66ll9q9rc6czpd9n292dmcafk5-activation-script.drv
-  /nix/store/vm5iw63djwbciig3hfdwc99z27w7r9l9-home-manager-files.drv
-  /nix/store/g74r1c23d0lfsvdw6n91bl104n0lwmgp-home-manager-generation.drv
-building '/nix/store/wlpbdqzsilzqj33lxdra9rlbgj2fs4pa-waybar-style.css.drv'...
-building '/nix/store/l1h2ak66ll9q9rc6czpd9n292dmcafk5-activation-script.drv'...
-building '/nix/store/vm5iw63djwbciig3hfdwc99z27w7r9l9-home-manager-files.drv'...
-building '/nix/store/g74r1c23d0lfsvdw6n91bl104n0lwmgp-home-manager-generation.drv'...
-Starting Home Manager activation
-Activating checkFilesChanged
-Activating checkLinkTargets
-Activating writeBoundary
-Activating installPackages
-nix profile remove /nix/store/2w1ygka5lyazgjbnirwx0wjdjvn0myvs-home-manager-path
-removing 'home-manager-path'
-removed 1 packages, kept 0 packages
-Activating linkGeneration
-Cleaning up orphan links from /home/michael
-Creating profile generation 76
-Creating home file links in /home/michael
-Activating onFilesChange
-Activating reloadSystemd
-Starting units: hyprland-session.target
+building the system configuration...
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-
-There are 164 unread and relevant news items.
-Read them by running the command "home-manager news".
-
+trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/4dpqs7sxg3iysnl56r5mdr8lrywypkxx-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
+trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/4dpqs7sxg3iysnl56r5mdr8lrywypkxx-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
+these 11 derivations will be built:
+  /nix/store/f8wzq00fvczgjrfkinwxdaqd6ymrazil-system-path.drv
+  /nix/store/l6ady0h0xl9kzb712vgb97mzxmyq7nj8-dbus-1.drv
+  /nix/store/gywykph5fncw2k2s2290sbjalr1862zs-X-Restart-Triggers-dbus.drv
+  /nix/store/2sq8adw14334hl8r89szbd3if1sddgp7-unit-dbus.service.drv
+  /nix/store/4aygchy94zwcgcn78amg5mq4khcmzc2c-X-Restart-Triggers-polkit.drv
+  /nix/store/w467av660ns1dav87pkzblwps9sj5naj-unit-polkit.service.drv
+  /nix/store/r7zg9hlkx9qn2j9lwyziysm3hqnmb1hs-system-units.drv
+  /nix/store/zpdh82nxr28yj1mv2xziwv2zcra0snb3-unit-dbus.service.drv
+  /nix/store/ssqxrcpsimisj168568h44nk24fr9jw5-user-units.drv
+  /nix/store/0lh4b2ri6nggaphbpjvp3bxljlhjqgzi-etc.drv
+  /nix/store/2vkwz59wfjp9kgwlqsnmf1vghmz396dm-nixos-system-nixos-24.11.20240622.a71e967.drv
+this path will be fetched (15.75 MiB download, 78.50 MiB unpacked):
+  /nix/store/zklzfb51mxs8pqdpwh6h51jkir50hq54-nodejs-22.3.0
+copying path '/nix/store/zklzfb51mxs8pqdpwh6h51jkir50hq54-nodejs-22.3.0' from 'https://cache.nixos.org'...
+building '/nix/store/f8wzq00fvczgjrfkinwxdaqd6ymrazil-system-path.drv'...
+building '/nix/store/4aygchy94zwcgcn78amg5mq4khcmzc2c-X-Restart-Triggers-polkit.drv'...
+building '/nix/store/l6ady0h0xl9kzb712vgb97mzxmyq7nj8-dbus-1.drv'...
+building '/nix/store/w467av660ns1dav87pkzblwps9sj5naj-unit-polkit.service.drv'...
+building '/nix/store/gywykph5fncw2k2s2290sbjalr1862zs-X-Restart-Triggers-dbus.drv'...
+building '/nix/store/2sq8adw14334hl8r89szbd3if1sddgp7-unit-dbus.service.drv'...
+building '/nix/store/zpdh82nxr28yj1mv2xziwv2zcra0snb3-unit-dbus.service.drv'...
+building '/nix/store/r7zg9hlkx9qn2j9lwyziysm3hqnmb1hs-system-units.drv'...
+building '/nix/store/ssqxrcpsimisj168568h44nk24fr9jw5-user-units.drv'...
+building '/nix/store/0lh4b2ri6nggaphbpjvp3bxljlhjqgzi-etc.drv'...
+building '/nix/store/2vkwz59wfjp9kgwlqsnmf1vghmz396dm-nixos-system-nixos-24.11.20240622.a71e967.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for michael...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service
+restarting the following units: polkit.service
+the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
