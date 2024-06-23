@@ -75,6 +75,7 @@
     discord
     spotify
     hyprland-workspaces
+    nodePackages.node2nix
     (pkgs.nerdfonts.override {fonts = ["FiraCode" "DroidSansMono"];})
   ];
 
