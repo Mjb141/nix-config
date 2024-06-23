@@ -15,6 +15,7 @@ in {
       lua-language-server
       nodePackages.bash-language-server
       nodePackages.prettier
+      nodePackages.typescript-language-server
       vimPlugins.nvim-treesitter.withAllGrammars
       ruff
       shellcheck

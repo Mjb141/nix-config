@@ -1,32 +1,9 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-these 5 derivations will be built:
-  /nix/store/knvdpfibiay8hql3yz8yplixdybrh31h-home-manager-path.drv
-  /nix/store/1q96v1nqakk2f3k5gi53i355cns1f0ax-hm_fontconfigconf.d10hmfonts.conf.drv
-  /nix/store/gskygpz24fnik8mkp9rawy0vcpacgxn0-home-manager-files.drv
-  /nix/store/klm5v4plpqwkip5d5z5b7s8xnb90w1hw-activation-script.drv
-  /nix/store/5mc2awxims2n4xb6ary3ziv2798ch5bx-home-manager-generation.drv
-building '/nix/store/knvdpfibiay8hql3yz8yplixdybrh31h-home-manager-path.drv'...
-building '/nix/store/klm5v4plpqwkip5d5z5b7s8xnb90w1hw-activation-script.drv'...
-building '/nix/store/1q96v1nqakk2f3k5gi53i355cns1f0ax-hm_fontconfigconf.d10hmfonts.conf.drv'...
-building '/nix/store/gskygpz24fnik8mkp9rawy0vcpacgxn0-home-manager-files.drv'...
-building '/nix/store/5mc2awxims2n4xb6ary3ziv2798ch5bx-home-manager-generation.drv'...
-Starting Home Manager activation
-Activating checkFilesChanged
-Activating checkLinkTargets
-Activating writeBoundary
-Activating installPackages
-nix profile remove /nix/store/4qq55ka3f8rcg9m4zr30vadwdaaqw6i0-home-manager-path
-removing 'home-manager-path'
-removed 1 packages, kept 0 packages
-Activating linkGeneration
-Cleaning up orphan links from /home/michael
-Creating profile generation 78
-Creating home file links in /home/michael
-Activating onFilesChange
-Activating reloadSystemd
-Starting units: hyprland-session.target
+building the system configuration...
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-
-There are 164 unread and relevant news items.
-Read them by running the command "home-manager news".
-
+trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/fzxjd0hv4z8jabj5nk78rbkr629xqla9-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
+trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/fzxjd0hv4z8jabj5nk78rbkr629xqla9-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
+activating the configuration...
+setting up /etc...
+reloading user units for michael...
+restarting sysinit-reactivation.target
