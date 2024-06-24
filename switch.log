@@ -1,43 +1,10 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-these 4 derivations will be built:
-  /nix/store/h198wz4b27i58xcidjyzirmgd23n4n7x-hm_hyprhyprland.conf.drv
-  /nix/store/pckrsfd4vl31yxfvab7xjzlk008zxgcg-home-manager-files.drv
-  /nix/store/r78fxdm6crjmkgdfb4sn0219yljwikpj-activation-script.drv
-  /nix/store/sbdjwj49lgjnsqvg8vagp5n6wywhbdgy-home-manager-generation.drv
-these 6 paths will be fetched (0.75 MiB download, 10.20 MiB unpacked):
-  /nix/store/qcqmiq1mb3pkk2bxbj6d6gb2fk9knk8l-file-5.45
-  /nix/store/mzg9fi1jl69kvf979axsbfsi1wzay53c-gnu-config-2024-01-01
-  /nix/store/18z454gyz0wpb641rw6gpqk0vi4wbxy6-gnumake-4.4.1
-  /nix/store/pdqndw2kgjv8l3kd5ii0c833jqmxdanq-patchelf-0.15.0
-  /nix/store/5gl8z4mxbfx4x4r5lamq9ccv4n7l6f1i-stdenv-linux
-  /nix/store/zls41s2455b6pw5d35sslf6v3gvz9349-update-autotools-gnu-config-scripts-hook
-copying path '/nix/store/mzg9fi1jl69kvf979axsbfsi1wzay53c-gnu-config-2024-01-01' from 'https://cache.nixos.org'...
-copying path '/nix/store/qcqmiq1mb3pkk2bxbj6d6gb2fk9knk8l-file-5.45' from 'https://cache.nixos.org'...
-copying path '/nix/store/18z454gyz0wpb641rw6gpqk0vi4wbxy6-gnumake-4.4.1' from 'https://cache.nixos.org'...
-copying path '/nix/store/pdqndw2kgjv8l3kd5ii0c833jqmxdanq-patchelf-0.15.0' from 'https://cache.nixos.org'...
-copying path '/nix/store/zls41s2455b6pw5d35sslf6v3gvz9349-update-autotools-gnu-config-scripts-hook' from 'https://cache.nixos.org'...
-copying path '/nix/store/5gl8z4mxbfx4x4r5lamq9ccv4n7l6f1i-stdenv-linux' from 'https://cache.nixos.org'...
-building '/nix/store/h198wz4b27i58xcidjyzirmgd23n4n7x-hm_hyprhyprland.conf.drv'...
-building '/nix/store/r78fxdm6crjmkgdfb4sn0219yljwikpj-activation-script.drv'...
-building '/nix/store/pckrsfd4vl31yxfvab7xjzlk008zxgcg-home-manager-files.drv'...
-building '/nix/store/sbdjwj49lgjnsqvg8vagp5n6wywhbdgy-home-manager-generation.drv'...
-Starting Home Manager activation
-Activating checkFilesChanged
-Activating checkLinkTargets
-Activating writeBoundary
-Activating installPackages
-nix profile remove /nix/store/qza75h5lz19v35acawafj9pvns1icl1r-home-manager-path
-removing 'home-manager-path'
-removed 1 packages, kept 0 packages
-Activating linkGeneration
-Cleaning up orphan links from /home/michael
-Creating profile generation 83
-Creating home file links in /home/michael
-Activating onFilesChange
-okActivating reloadSystemd
-Starting units: hyprland-session.target
+building the system configuration...
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-
-There are 164 unread and relevant news items.
-Read them by running the command "home-manager news".
-
+trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/z6pczz5haw582fb6va203bs5218w6fny-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
+trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/z6pczz5haw582fb6va203bs5218w6fny-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
+activating the configuration...
+setting up /etc...
+reloading user units for michael...
+restarting sysinit-reactivation.target
+the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service

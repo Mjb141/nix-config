@@ -101,12 +101,18 @@
       windowrulev2 = fullscreen,class:^(Last Epoch)$
 
       # Rule for Warp
+      windowrulev2 = opacity 0.9 0.9,class:^(dev.warp.Warp)$
       windowrulev2 = tile,class:^(dev.warp.Warp)$
 
       # Discord
       windowrulev2 = opacity 0.9 0.9,class:^(discord)$
       windowrulev2 = workspace 2, monitor 0,class:$(discord)$
       exec-once = discord
+
+      # Firefox
+      windowrulev2 = opacity 0.9 0.9,class:^(firefox)$
+      windowrulev2 = workspace 1, monitor 0,class:$(firefox)$
+      exec-once = firefox
 
       # See https://wiki.hyprland.org/Configuring/Keywords/ for more
       $mainMod = SUPER_CTRL
@@ -146,10 +152,6 @@
       # Volume
       binde = , xf86audioraisevolume, exec, pamixer -i 10
       binde = , xf86audiolowervolume, exec, pamixer -d 10
-
-      # Source a file (multi-file configs)
-      # source = ~/.config/hypr/env_var.conf
-      # source = ~/.config/hypr/env_var_nvidia.conf
     '';
   };
 }
