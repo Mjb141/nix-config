@@ -103,6 +103,11 @@
       # Rule for Warp
       windowrulev2 = tile,class:^(dev.warp.Warp)$
 
+      # Discord
+      windowrulev2 = opacity 0.9 0.9,class:^(discord)$
+      windowrulev2 = workspace 2, monitor 0,class:$(discord)$
+      exec-once = discord
+
       # See https://wiki.hyprland.org/Configuring/Keywords/ for more
       $mainMod = SUPER_CTRL
       $secondaryMod = SUPER_CTRL_SHIFT
