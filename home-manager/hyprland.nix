@@ -104,15 +104,18 @@
       windowrulev2 = opacity 0.9 0.9,class:^(dev.warp.Warp)$
       windowrulev2 = tile,class:^(dev.warp.Warp)$
 
+      # Firefox
+      windowrulev2 = opacity 0.8 0.8,class:^(firefox)$
+      windowrulev2 = workspace 1, monitor 0,class:$(firefox)$
+      exec-once = firefox
+
       # Discord
-      windowrulev2 = opacity 0.9 0.9,class:^(discord)$
+      windowrulev2 = opacity 0.8 0.8,class:^(discord)$
       windowrulev2 = workspace 2, monitor 0,class:$(discord)$
       exec-once = discord
 
-      # Firefox
-      windowrulev2 = opacity 0.9 0.9,class:^(firefox)$
-      windowrulev2 = workspace 1, monitor 0,class:$(firefox)$
-      exec-once = firefox
+      # Spotify
+      windowrulev2 = opacity 0.8 0.8,initialtitle:^(Spotify Premium)$
 
       # See https://wiki.hyprland.org/Configuring/Keywords/ for more
       $mainMod = SUPER_CTRL
