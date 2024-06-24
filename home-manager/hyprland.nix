@@ -10,6 +10,10 @@
   wayland.windowManager.hyprland = {
     enable = true;
     extraConfig = ''
+      ##################################################
+      # Configuration and Initial Setup
+      ##################################################
+
       monitor=,preferred,auto,auto,bitdepth,10
       monitor=Unknown-1,disable
 
@@ -48,6 +52,10 @@
           disable_hyprland_logo = yes
       }
 
+      ##################################################
+      # Visuals
+      ##################################################
+
       decoration {
           # See https://wiki.hyprland.org/Configuring/Variables/ for more
           rounding = 6
@@ -83,6 +91,16 @@
           new_is_master = true
       }
 
+      ##################################################
+      # Workspaces
+      ##################################################
+
+      workspace = 2, persistent:true
+
+      ##################################################
+      # Windows
+      ##################################################
+
       # Windows that should float by default
       windowrule = float,^(pavucontrol)$
       windowrule = float,^(blueman-manager)$
@@ -116,6 +134,10 @@
 
       # Spotify
       windowrulev2 = opacity 0.8 0.8,initialtitle:^(Spotify Premium)$
+
+      ##################################################
+      # Controls
+      ##################################################
 
       # See https://wiki.hyprland.org/Configuring/Keywords/ for more
       $mainMod = SUPER_CTRL
