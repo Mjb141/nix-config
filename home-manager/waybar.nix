@@ -34,7 +34,7 @@
           format = "{}";
         };
         "clock" = {
-          format = "{:A %d-%m-%Y %H:%M}";
+          format = "{:%A %d-%m-%Y %H:%M}";
         };
         "network" = {
           format-wifi = "WiFi: {signalStrength}%";

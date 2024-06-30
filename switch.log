@@ -1,33 +1,9 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-these 4 derivations will be built:
-  /nix/store/h8j51g8dxd7k2xadycwgfhhqjd74drap-waybar-config.json.drv
-  /nix/store/88a1j5qy9iy619lr4dhyd05bjfq8g5j5-home-manager-files.drv
-  /nix/store/qa1arbgvy885fykip8ilwcld6qcmy88v-activation-script.drv
-  /nix/store/1pjmv2piiwf0dldpi1lk5mj187j5fmfs-home-manager-generation.drv
-this path will be fetched (0.00 MiB download, 0.01 MiB unpacked):
-  /nix/store/zdhjf7wlszzjywpy5zvvzpkf9iyllkw5-jq-1.7.1-dev
-copying path '/nix/store/zdhjf7wlszzjywpy5zvvzpkf9iyllkw5-jq-1.7.1-dev' from 'https://cache.nixos.org'...
-building '/nix/store/h8j51g8dxd7k2xadycwgfhhqjd74drap-waybar-config.json.drv'...
-building '/nix/store/qa1arbgvy885fykip8ilwcld6qcmy88v-activation-script.drv'...
-building '/nix/store/88a1j5qy9iy619lr4dhyd05bjfq8g5j5-home-manager-files.drv'...
-building '/nix/store/1pjmv2piiwf0dldpi1lk5mj187j5fmfs-home-manager-generation.drv'...
-Starting Home Manager activation
-Activating checkFilesChanged
-Activating checkLinkTargets
-Activating writeBoundary
-Activating installPackages
-nix profile remove /nix/store/sp34i6l8s7a122srn7f3m2lg8khkipwf-home-manager-path
-removing 'home-manager-path'
-removed 1 packages, kept 0 packages
-Activating linkGeneration
-Cleaning up orphan links from /home/michael
-Creating profile generation 93
-Creating home file links in /home/michael
-Activating onFilesChange
-Activating reloadSystemd
-Starting units: hyprland-session.target
+building the system configuration...
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-
-There are 165 unread and relevant news items.
-Read them by running the command "home-manager news".
-
+trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/zbmk1zxwrhsrd0lvdap72ikmm7f3p27c-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
+trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/zbmk1zxwrhsrd0lvdap72ikmm7f3p27c-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
+activating the configuration...
+setting up /etc...
+reloading user units for michael...
+restarting sysinit-reactivation.target
