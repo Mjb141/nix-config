@@ -33,6 +33,9 @@
         "hyprland/window" = {
           format = "{}";
         };
+        "clock" = {
+          format = "{:A %d-%m-%Y %H:%M}";
+        };
         "network" = {
           format-wifi = "WiFi: {signalStrength}%";
           format-disconnected = "Disconnected";
