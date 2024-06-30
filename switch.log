@@ -1,9 +1,21 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+nix profile remove /nix/store/sp34i6l8s7a122srn7f3m2lg8khkipwf-home-manager-path
+removing 'home-manager-path'
+removed 1 packages, kept 0 packages
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+No change so reusing latest profile generation 94
+Creating home file links in /home/michael
+Activating onFilesChange
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/23dnr4yxilj0911f7nvy0fc93n2zyd0f-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
-trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/23dnr4yxilj0911f7nvy0fc93n2zyd0f-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
+
+There are 165 unread and relevant news items.
+Read them by running the command "home-manager news".
+
