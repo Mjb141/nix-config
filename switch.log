@@ -1,26 +1,9 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-these 2 derivations will be built:
-  /nix/store/dcnqq003r569ba9vp63dgazahc8k3yka-home-manager-files.drv
-  /nix/store/2aw96dl3wqbyi75jls0nqar6g016wbjq-home-manager-generation.drv
-building '/nix/store/dcnqq003r569ba9vp63dgazahc8k3yka-home-manager-files.drv'...
-building '/nix/store/2aw96dl3wqbyi75jls0nqar6g016wbjq-home-manager-generation.drv'...
-Starting Home Manager activation
-Activating checkFilesChanged
-Activating checkLinkTargets
-Activating writeBoundary
-Activating installPackages
-nix profile remove /nix/store/3j88zlf3n46gb1wz6zg17rhi4sadr9gh-home-manager-path
-removing 'home-manager-path'
-removed 1 packages, kept 0 packages
-Activating linkGeneration
-Cleaning up orphan links from /home/michael
-Creating profile generation 89
-Creating home file links in /home/michael
-Activating onFilesChange
-Activating reloadSystemd
-Starting units: hyprland-session.target
+building the system configuration...
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-
-There are 165 unread and relevant news items.
-Read them by running the command "home-manager news".
-
+trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/06cqh7h9laxjk49z2h35lnr8i7xi6ynw-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
+trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/06cqh7h9laxjk49z2h35lnr8i7xi6ynw-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
+activating the configuration...
+setting up /etc...
+reloading user units for michael...
+restarting sysinit-reactivation.target

@@ -13,6 +13,7 @@ in {
       alejandra
       gcc9
       lua-language-server
+      nodePackages_latest.typescript-language-server
       nodePackages.bash-language-server
       nodePackages.prettier
       vimPlugins.typescript-tools-nvim
