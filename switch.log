@@ -1,9 +1,31 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+these 4 derivations will be built:
+  /nix/store/f3w3iax374jbhzyagwh385fhk5asdxvh-hm_hyprhyprland.conf.drv
+  /nix/store/1ngzq6bjnnax1yv7yfid5dfxz7bnhq5b-activation-script.drv
+  /nix/store/bn5306rfl3hl8325qmxg8n558dw3yp6r-home-manager-files.drv
+  /nix/store/3h6xqx7zqxv14dhh1h16fz5cn0qf7fay-home-manager-generation.drv
+building '/nix/store/f3w3iax374jbhzyagwh385fhk5asdxvh-hm_hyprhyprland.conf.drv'...
+building '/nix/store/1ngzq6bjnnax1yv7yfid5dfxz7bnhq5b-activation-script.drv'...
+building '/nix/store/bn5306rfl3hl8325qmxg8n558dw3yp6r-home-manager-files.drv'...
+building '/nix/store/3h6xqx7zqxv14dhh1h16fz5cn0qf7fay-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+nix profile remove /nix/store/sp34i6l8s7a122srn7f3m2lg8khkipwf-home-manager-path
+removing 'home-manager-path'
+removed 1 packages, kept 0 packages
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+Creating profile generation 92
+Creating home file links in /home/michael
+Activating onFilesChange
+ok
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/4a9kzmp47fgvrw9cwmxdhb68sicj2qfg-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
-trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/4a9kzmp47fgvrw9cwmxdhb68sicj2qfg-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
+
+There are 165 unread and relevant news items.
+Read them by running the command "home-manager news".
+
