@@ -21,5 +21,12 @@ return {
       end,
       desc = "Track Back",
     },
+    {
+      "<leader>td",
+      function()
+        require("trailblazer").delete_all_trail_marks()
+      end,
+      desc = "Delete Trail",
+    },
   },
 }
