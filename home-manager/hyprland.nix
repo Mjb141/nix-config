@@ -124,16 +124,14 @@
 
       # Firefox
       windowrulev2 = opacity 0.8 0.8,class:^(firefox)$
-      windowrulev2 = workspace 1, monitor 0,class:$(firefox)$
-      exec-once = firefox
+      exec-once = [workspace 1 silent] firefox
 
       # Discord
       windowrulev2 = opacity 0.8 0.8,class:^(discord)$
-      windowrulev2 = workspace 2, monitor 0,class:$(discord)$
-      exec-once = discord
+      exec-once = [workspace 2 silent] discord
 
       # Spotify
-      windowrulev2 = opacity 0.8 0.8,initialtitle:^(Spotify Premium)$
+      windowrulev2 = opacity 0.8 0.8,initialTitle:^(Spotify Premium)$
 
       ##################################################
       # Controls
