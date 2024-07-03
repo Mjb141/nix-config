@@ -1,5 +1,4 @@
 {
-  inputs,
   config,
   pkgs,
   ...
@@ -117,13 +116,29 @@
     enable = true;
     xwayland.enable = true;
   };
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs;
+      [
+        alsaLib
+        libglvnd
+      ]
+      ++ (with xorg; [
+        libX11
+        libXcursor
+        libXi
+        libXinerama
+        libXrandr
+        libXrender
+      ]);
+  };
 
   # Users
   users.users.michael = {
     isNormalUser = true;
     description = "Michael";
     extraGroups = ["networkmanager" "wheel"];
-    packages = with pkgs; [];
+    packages = [];
   };
 
   # Variables
