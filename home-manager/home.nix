@@ -18,6 +18,7 @@
     ./nvim.nix
     ./wofi.nix
     ./zsh.nix
+    ./binaries/dungeondraft
   ];
 
   nixpkgs = {
