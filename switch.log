@@ -1,37 +1,21 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+nix profile remove /nix/store/sp34i6l8s7a122srn7f3m2lg8khkipwf-home-manager-path
+removing 'home-manager-path'
+removed 1 packages, kept 0 packages
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+No change so reusing latest profile generation 94
+Creating home file links in /home/michael
+Activating onFilesChange
+Activating reloadSystemd
+Starting units: hyprland-session.target
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/jk8cb7rjwpkjdzs97mvg8flnvrylrxkk-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
-trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/jk8cb7rjwpkjdzs97mvg8flnvrylrxkk-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
-these 12 derivations will be built:
-  /nix/store/ib856pbm650cygjjbz11bm9n7gl7v9bg-ld-library-path.drv
-  /nix/store/lg0wag10lkws7p1ywrqddxdcfc4jb322-system-path.drv
-  /nix/store/mmw4d5p770d60l11wajli9dhzyw7pvfk-dbus-1.drv
-  /nix/store/a539wzkpnys0ig3kk65gh2g9ryhab35j-X-Restart-Triggers-dbus.drv
-  /nix/store/fy0z7l7m836a6wxz7q7s50ysf11gqfgd-unit-dbus.service.drv
-  /nix/store/23d732k7p41rx6h2js2qlcy6r45z6par-user-units.drv
-  /nix/store/cac4yjknj3f0adlidfqkcjnpc6p1ynz0-X-Restart-Triggers-polkit.drv
-  /nix/store/922iijis2gh5nz0w2mj0y8x24hgqwwyh-unit-polkit.service.drv
-  /nix/store/hcc0z2fkzmacfbcl4hcp8h7yhqkcmkg6-unit-dbus.service.drv
-  /nix/store/31ksrir4n69dxz5w193kaj4s6ks65ygh-system-units.drv
-  /nix/store/big7cjq8sr7hr3p8kkqcrl07m2iv7hji-etc.drv
-  /nix/store/jnpndd6w42mvl0vlpr18hf9i9szpp0wk-nixos-system-nixos-24.11.20240627.b2852eb.drv
-building '/nix/store/ib856pbm650cygjjbz11bm9n7gl7v9bg-ld-library-path.drv'...
-building '/nix/store/lg0wag10lkws7p1ywrqddxdcfc4jb322-system-path.drv'...
-building '/nix/store/cac4yjknj3f0adlidfqkcjnpc6p1ynz0-X-Restart-Triggers-polkit.drv'...
-building '/nix/store/mmw4d5p770d60l11wajli9dhzyw7pvfk-dbus-1.drv'...
-building '/nix/store/922iijis2gh5nz0w2mj0y8x24hgqwwyh-unit-polkit.service.drv'...
-building '/nix/store/a539wzkpnys0ig3kk65gh2g9ryhab35j-X-Restart-Triggers-dbus.drv'...
-building '/nix/store/fy0z7l7m836a6wxz7q7s50ysf11gqfgd-unit-dbus.service.drv'...
-building '/nix/store/hcc0z2fkzmacfbcl4hcp8h7yhqkcmkg6-unit-dbus.service.drv'...
-building '/nix/store/23d732k7p41rx6h2js2qlcy6r45z6par-user-units.drv'...
-building '/nix/store/31ksrir4n69dxz5w193kaj4s6ks65ygh-system-units.drv'...
-building '/nix/store/big7cjq8sr7hr3p8kkqcrl07m2iv7hji-etc.drv'...
-building '/nix/store/jnpndd6w42mvl0vlpr18hf9i9szpp0wk-nixos-system-nixos-24.11.20240627.b2852eb.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
-reloading the following units: dbus.service
-restarting the following units: polkit.service
-the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+
+There are 165 unread and relevant news items.
+Read them by running the command "home-manager news".
+
