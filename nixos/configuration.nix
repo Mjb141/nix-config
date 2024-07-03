@@ -130,6 +130,7 @@
         libXinerama
         libXrandr
         libXrender
+        libXext
       ]);
   };
 
