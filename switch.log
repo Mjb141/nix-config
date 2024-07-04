@@ -1,10 +1,31 @@
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-building the system configuration...
+these 4 derivations will be built:
+  /nix/store/c77qm0f89s9vmgx7mfgl3iim0v9hkk92-hm_hyprhyprpaper.conf.drv
+  /nix/store/d0rac26b97lx91ivg7c26sqvs65xm1lg-hyprpaper.service.drv
+  /nix/store/snc8cbj3k14hjbcdqdy1xfqmiwkbn4bl-home-manager-files.drv
+  /nix/store/01h8zwby34k97i1jr04bdwlzw9c18640-home-manager-generation.drv
+building '/nix/store/c77qm0f89s9vmgx7mfgl3iim0v9hkk92-hm_hyprhyprpaper.conf.drv'...
+building '/nix/store/d0rac26b97lx91ivg7c26sqvs65xm1lg-hyprpaper.service.drv'...
+building '/nix/store/snc8cbj3k14hjbcdqdy1xfqmiwkbn4bl-home-manager-files.drv'...
+building '/nix/store/01h8zwby34k97i1jr04bdwlzw9c18640-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+nix profile remove /nix/store/vhbyfi8l3zw5h691xlrml08cdibxsbj0-home-manager-path
+removing 'home-manager-path'
+removed 1 packages, kept 0 packages
+Activating linkGeneration
+Cleaning up orphan links from /home/michael
+Creating profile generation 99
+Creating home file links in /home/michael
+Activating onFilesChange
+Activating reloadSystemd
+Stopping units: hyprpaper.service
+Starting units: hyprland-session.target, hyprpaper.service
 warning: Git tree '/home/michael/Projects/nix-config' is dirty
-trace: warning: The option `hardware.opengl.driSupport32Bit' defined in `/nix/store/gq42rndh45hkd3axq7nlld4qnc6ha256-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable32Bit'.
-trace: warning: The option `hardware.opengl.enable' defined in `/nix/store/gq42rndh45hkd3axq7nlld4qnc6ha256-source/nixos/configuration.nix' has been renamed to `hardware.graphics.enable'.
-activating the configuration...
-setting up /etc...
-reloading user units for michael...
-restarting sysinit-reactivation.target
-the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+
+There are 165 unread and relevant news items.
+Read them by running the command "home-manager news".
+
