@@ -59,10 +59,10 @@
       settings = {
         ipc = "on";
         preload = [
-          "/home/michael/Pictures/gfy47ugj6beb1.webp"
+          "/home/michael/Pictures/metan01.jpg"
         ];
         wallpaper = [
-          "DP-2,/home/michael/Pictures/gfy47ugj6beb1.webp"
+          "DP-2,/home/michael/Pictures/metan01.jpg"
         ];
       };
     };
