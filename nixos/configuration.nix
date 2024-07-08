@@ -124,13 +124,18 @@
         libglvnd
       ]
       ++ (with xorg; [
-        libX11
         libXcursor
-        libXi
         libXinerama
-        libXrandr
-        libXrender
         libXext
+        libXrandr
+        libXi
+        libGL
+        zlib
+        libkrb5
+        libX11
+        libXinerama
+        libXrender
+        mono
       ]);
   };
 
