@@ -105,7 +105,7 @@
     slurp
     wf-recorder
     grimblast
-    go
+    xfce.thunar
     # (callPackage ./pkgs/themes/sddm/monochrome-red.nix {}).monochrome-red
   ];
 
